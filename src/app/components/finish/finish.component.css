@@ -1,0 +1,35 @@
+.result h2 {
+    color: #1D355D;
+    font-size: 42px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  
+  .result p {
+    font-weight: 400;
+  }
+  
+  .result p samp {
+    color: rgb(2, 182, 2);
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .result div {
+    margin-top: 50px;
+  }
+  
+  .result div button {
+    width: 179px;
+    height: 58px;
+    border-radius: 12px;
+    background-color: white;
+    border: 2px solid #1D355D;
+    color: #1D355D;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+.text-center {
+  text-align: center;
+}

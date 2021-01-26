@@ -1,0 +1,26 @@
+<section>
+    <div class="card" id="card-question">
+        <h3 class="question">{{question}}</h3>
+        <div class="answer" *ngFor="let item of answer; index as i" (click)="checkAnswer(item, i)">
+            <div class="answer-identity">
+                <p>A</p>
+            </div>
+            <div class="answer-answer">
+                <p>{{item.capital}}</p>
+            </div>
+            <input type="hidden" value={{item.correct}}>
+        </div>
+        <div class="flex justify-content-end d-none" #next>
+            <button class="btn btn-warning" (click)="nextAnswer()">Next</button>
+        </div>
+        
+    </div>
+    <div class="card result text-center d-none" id="card-result">
+        <img src="../../assets/undraw_winners_ao2o 2.svg" alt="">
+        <h2>Result</h2>
+        <p>You got <samp>4</samp> correct answer</p>
+        <div>
+            <button (click)="tryAgain()">Try again</button>
+        </div>
+    </div>
+</section>
